@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "mini_app/build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

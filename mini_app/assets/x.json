@@ -1,0 +1,261 @@
+[
+    {
+      "index":0,
+      "name":"Facebook",
+      "brand":"Mark jukerberg 2004",
+      "url":"https://www.facebook.com",
+      "image":"https://www.adweek.com/wp-content/uploads/2017/02/Facebook-Logo.jpg"
+    },
+   {
+      "index":0,
+      "name":"Instagram",
+      "brand":"Mark jukerberg 2010",
+      "url":"https://www.instagram.com", 
+      "image":"https://image.shutterstock.com/image-photo/kiev-ukraine-may-14-2016-260nw-420838831.jpg"
+    },
+     {
+      "index":0,
+      "name":"Twitter",
+      "brand":"Dowsey 2006",
+      "url":"https://www.twitter.com/", 
+      "image":"https://image.shutterstock.com/image-photo/kiev-ukraine-may-26-2015twitter-260nw-281505518.jpg"
+    },
+    {
+      "index":0,
+      "name":"Snapshat",
+      "brand":"Reggie Brown 2011",
+      "url":"https://www.snapchat.com/", 
+      "image":"https://i.pinimg.com/originals/d9/cc/e8/d9cce8e37b70ff92d212a1bc7a9137d5.png"
+    },
+    {
+      "index":1,
+      "name":"ebay",
+      "brand":"Pierre Omidyar 1995",
+      "url":"https://www.ebay.com/",
+      "image":"https://vni.s3.amazonaws.com/140116183154656.png"
+    },
+   {
+      "index":1,
+      "name":"Flipcart",
+      "brand":"Sachin Bansal 2007",
+      "url":"https://www.flipkart.com/", 
+      "image":"https://entrackr.com/wp-content/uploads/2020/02/flipkart-image...-560x280.jpg"
+    },
+     {
+      "index":1,
+      "name":"Amazon",
+      "brand":"Jeff Bejos 1995",
+      "url":"https://www.amazon.in/", 
+      "image":"https://pngimg.com/uploads/amazon/amazon_PNG5.png"
+    },
+    {
+      "index":1,
+      "name":"Alibaba",
+      "brand":"Jack Ma 1999",
+      "url":"https://www.alibaba.com/", 
+      "image":"https://preview.thenewsmarket.com/Previews/alib/StillAssets/400x300/255110.JPG"
+    },
+    {
+      "index":2,
+      "name":"Youtube",
+      "brand":"Steve Chen 2005",
+      "url":"https://www.youtube.com/", 
+      "image":"https://betanews.com/wp-content/uploads/2017/08/new-youtube-logo.jpg"
+    },
+    {
+      "index":2,
+      "name":"Netflix",
+      "brand":"Mark Randolf 1997",
+      "url":"https://www.netflix.com/in/login", 
+      "image":"https://i.pinimg.com/originals/d8/47/9a/d8479ab66758648c5b2a403249a65d57.jpg"
+    },
+    {
+      "index":2,
+      "name":"Amazon Prime",
+      "brand":"Jeff Bezos 2005",
+      "url":"https://www.primevideo.com/",
+      "image":"https://www.telesurenglish.net/__export/1584731358366/sites/telesur/img/2020/03/20/amazon_2.jpg_1718483346.jpg"
+    },
+   {
+      "index":2,
+      "name":"Hotstar",
+      "brand":"Star India 2015",
+      "url":"https://www.hotstar.com/in/subscribe/my-account", 
+      "image":"https://i.imgur.com/U4Op2KW.jpg"
+    },
+     {
+      "index":2,
+      "name":"SonyLive",
+      "brand":"Sony 2013",
+      "url":"https://www.sonyliv.com/", 
+      "image":"https://images.news18.com/ibnlive/uploads/2020/05/1590663909_sonyliv2-1.jpg"
+    },
+    {
+      "index":3,
+      "name":"Paypal",
+      "brand":"Elon Musk 1998",
+      "url":"https://www.paypal.com/myaccount", 
+      "image":"https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg"
+    },
+   {
+      "index":3,
+      "name":"Paytm",
+      "brand":"Vijay Shekhar 2010",
+      "url":"https://paytm.com/",
+      "image":"https://images.indianexpress.com/2017/02/paytm-logo-1200.jpg"
+    },
+   {
+      "index":3,
+      "name":"Google pay",
+      "brand":"Google 2015",
+      "url":"https://pay.google.com/gp/w/u/0/home/signup", 
+      "image":"https://www.nicepng.com/png/detail/769-7692873_download-google-pay-logo-png.png"
+    },
+    {
+      "index":4,
+      "name":"Break Out",
+      "brand":"Atari Arcade 1972",
+      "url":"https://elgoog.im/breakout/", 
+      "image":"https://www.maketecheasier.com/assets/uploads/2021/08/hidden-secret-google-games-breakout.jpg.webp"
+    },
+    {
+      "index":4,
+      "name":"Solitaire",
+      "brand":"Wes Cherry 1990",
+      "url":"https://www.google.com/search?q=solitaire&oq=solitaire&aqs=chrome..69i57.4425j0j9&sourceid=chrome&ie=UTF-8",
+      "image":"https://www.maketecheasier.com/assets/uploads/2018/03/best-hidden-secret-google-games-solitaire-x.jpg.webp"
+    },
+   {
+      "index":4,
+      "name":"Pacman",
+      "brand":"Toru Iwatani 1979",
+      "url":"https://www.google.com/search?q=pacman&oq=pacman&aqs=chrome..69i57.1675j0j4&sourceid=chrome&ie=UTF-8", 
+      "image":"https://media.wired.com/photos/5933755558b0d64bb35d579d/master/w_2560%2Cc_limit/pacman_500px.jpg"
+    },
+     {
+      "index":5,
+      "name":"Police",
+      "brand":"Nitin Tiwari",
+      "url":"tel:100", 
+      "image":"https://spiderimg.amarujala.com/assets/images/2019/02/21/750x506/meerut-news_1550726012.jpeg"
+    },
+    {
+      "index":5,
+      "name":"Fire",
+      "brand":"Uday K",
+      "url":"tel:101", 
+      "image":"https://editorial01.shutterstock.com/wm-preview-1500/1167013e/b5631d8d/mumbais-raj-era-fire-brigade-gets-a-modern-update-byculla-firestation-mumbai-india-shutterstock-editorial-1167013e.jpg"
+    },
+
+   {
+      "index":5,
+      "name":"WHN",
+      "brand":"R Shreelekha",
+      "url":"tel:1090", 
+      "image":"https://uppolice.gov.in/site/writereaddata/siteContent/wpl/2018092615403885312.jpg"
+    },
+     {
+      "index":5,
+      "name":"Papa",
+      "brand":"",
+      "url":"tel:919818573493", 
+      "image":"https://img.favpng.com/10/9/11/drawing-father-son-child-png-favpng-z2pyh2ezHp9KN2s0heQ02hz7Y.jpg"
+    },
+    {
+      "index":5,
+      "name":"Ambulence",
+      "brand":"Pankaj Rahi",
+      "url":"tel:102", 
+      "image":"https://www.zhl.org.in/blog/wp-content/uploads/2019/09/What-Is-The-Emergency-Number-Of-Ambulance.jpg"
+    },
+    {
+      "index":6,
+      "name":"Discord",
+      "brand":"Jason Citron 2012",
+      "url":"https://discord.com/login",
+      "image":"https://cdn.iconscout.com/icon/free/png-256/discord-1-555369.png"
+    },
+   {
+      "index":6,
+      "name":"Telegram",
+      "brand":"Jungho Shin 2010",
+      "url":"https://web.telegram.org/#/im", 
+      "image":"https://cdn.iconscout.com/icon/free/png-256/telegram-1867901-1580057.png"
+    },
+     {
+      "index":6,
+      "name":"Whatspp",
+      "brand":"Brian Acton 2009",
+      "url":"https://web.whatsapp.com/", 
+      "image":"https://e7.pngegg.com/pngimages/1006/83/png-clipart-whatsapp-computer-icons-android-whatsapp-cdr-logo.png"
+    },
+    {
+      "index":6,
+      "name":"ORIGINAL",
+      "brand":"Chat and video calling",
+      "url":"https://www.snapchat.com/", 
+      "image":"https://i.pinimg.com/originals/d9/cc/e8/d9cce8e37b70ff92d212a1bc7a9137d5.png"
+    },
+   {
+      "index":7,
+      "name":"Github",
+      "brand":"Tom Preston-Werner 2008",
+      "url":"https://github.com/Nkr-programmer/",
+      "image":"https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png"
+    },
+   {
+      "index":7,
+      "name":"Linkedin",
+      "brand":"Reid Hoffman 2002",
+      "url":"https://www.linkedin.com/feed/", 
+      "image":"https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-transparent-PNG.png"
+    },
+     {
+      "index":7,
+      "name":"CodeChef",
+      "brand":"Bhavin Turakhia 2009",
+      "url":"https://www.codechef.com/", 
+      "image":"https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
+    },
+    {
+      "index":7,
+      "name":"GFG",
+      "brand":"Sandeep Jain",
+      "url":"https://practice.geeksforgeeks.org/", 
+      "image":"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200617163105/gfg-logo.png"
+    },    {
+      "index":7,
+      "name":"Leetcode",
+      "brand":"Hercy Chang 2015",
+      "url":"https://leetcode.com/", 
+      "image":"https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+    },
+    {
+      "index":8,
+      "name":"MotiLal Oswal",
+      "brand":"Motilal Oswal 1987",
+      "url":"https://www.motilaloswal.com/open-demat-account/?SRC=Website&pd=Header_OAO_Button",
+      "image":"https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397178517/4b658045e5aebfa858d3ad272ca46e8d.jpg"
+    },
+   {
+      "index":8,
+      "name":"Upstocks",
+      "brand":"Ravi Kumar 2009",
+      "url":"https://upstox.com/open-demat-account/", 
+      "image":"https://upstox.com/favicon/mstile-310x310.png"
+    },
+     {
+      "index":8,
+      "name":"Groww",
+      "brand":"Lalit Keshre 2016",
+      "url":"https://www.groww.net/login", 
+      "image":"https://groww.in/logo-groww270.png"
+    },
+    {
+      "index":8,
+      "name":"Zerodha",
+      "brand":"Nitin kamanth 2010",
+      "url":"https://signup.zerodha.com/", 
+      "image":"https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1483514228/j6kp5kzapwqvn4ekffy3.jpg"
+    }
+  ]
