@@ -27,7 +27,7 @@ recentMessageMap["link_number"]=this.number;
 recentMessageMap["link_image"]=this.image;
 
 return recentMessageMap;}
-RecentMessage.fromMap(Map recentMessageMap){
+RecentMessage.fromMap(Map<String,dynamic> recentMessageMap){
 this.index=recentMessageMap["link_index"];
 this.name=recentMessageMap["link_name"];
 this.brand=recentMessageMap["link_brand"];

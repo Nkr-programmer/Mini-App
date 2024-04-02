@@ -22,17 +22,17 @@
     },
     {
       "index":0,
-      "name":"Snapshat",
+      "name":"Snapchat",
       "brand":"Reggie Brown 2011",
       "url":"https://www.snapchat.com/", 
-      "image":"https://i.pinimg.com/originals/d9/cc/e8/d9cce8e37b70ff92d212a1bc7a9137d5.png"
+      "image":"https://links.communitycenter.eu/images/archive/e/e7/20220706140124%21Snapchat_App_Icon.png"
     },
     {
       "index":1,
       "name":"ebay",
       "brand":"Pierre Omidyar 1995",
       "url":"https://www.ebay.com/",
-      "image":"https://vni.s3.amazonaws.com/140116183154656.png"
+      "image":"https://cdn.icon-icons.com/icons2/3041/PNG/512/ebay_logo_icon_189246.png"
     },
    {
       "index":1,
@@ -46,7 +46,7 @@
       "name":"Amazon",
       "brand":"Jeff Bejos 1995",
       "url":"https://www.amazon.in/", 
-      "image":"https://pngimg.com/uploads/amazon/amazon_PNG5.png"
+      "image":"https://wallpapers.com/images/hd/gray-amazon-uk-logo-hghztj7ol9htmgut.jpg"
     },
     {
       "index":1,
@@ -57,24 +57,24 @@
     },
     {
       "index":2,
-      "name":"Youtube",
+      "name":"YouTube",
       "brand":"Steve Chen 2005",
       "url":"https://www.youtube.com/", 
-      "image":"https://betanews.com/wp-content/uploads/2017/08/new-youtube-logo.jpg"
+      "image":"https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
     },
     {
       "index":2,
       "name":"Netflix",
       "brand":"Mark Randolf 1997",
       "url":"https://www.netflix.com/in/login", 
-      "image":"https://i.pinimg.com/originals/d8/47/9a/d8479ab66758648c5b2a403249a65d57.jpg"
+      "image":"https://variety.com/wp-content/uploads/2020/05/netflix-logo.png"
     },
     {
       "index":2,
       "name":"Amazon Prime",
       "brand":"Jeff Bezos 2005",
       "url":"https://www.primevideo.com/",
-      "image":"https://www.telesurenglish.net/__export/1584731358366/sites/telesur/img/2020/03/20/amazon_2.jpg_1718483346.jpg"
+      "image":"https://images.news18.com/ibnlive/uploads/2021/10/amazon-prime.jpg"
     },
    {
       "index":2,
@@ -95,7 +95,7 @@
       "name":"Paypal",
       "brand":"Elon Musk 1998",
       "url":"https://www.paypal.com/myaccount", 
-      "image":"https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg"
+      "image":"https://w7.pngwing.com/pngs/294/895/png-transparent-donation-logo-pinballz-paypal-paypal-icon-blue-donation-logo-thumbnail.png"
     },
    {
       "index":3,
@@ -109,7 +109,7 @@
       "name":"Google pay",
       "brand":"Google 2015",
       "url":"https://pay.google.com/gp/w/u/0/home/signup", 
-      "image":"https://www.nicepng.com/png/detail/769-7692873_download-google-pay-logo-png.png"
+      "image":"https://www.moneylife.in/site/userimage/image/1653129739_Gpay528.jpg"
     },
     {
       "index":4,
@@ -130,7 +130,7 @@
       "name":"Pacman",
       "brand":"Toru Iwatani 1979",
       "url":"https://www.google.com/search?q=pacman&oq=pacman&aqs=chrome..69i57.1675j0j4&sourceid=chrome&ie=UTF-8", 
-      "image":"https://media.wired.com/photos/5933755558b0d64bb35d579d/master/w_2560%2Cc_limit/pacman_500px.jpg"
+      "image":"https://static.bandainamcoent.eu/high/pac-man/brand-setup/pac_thumb_brand_624x468_4b.jpg"
     },
      {
       "index":5,
@@ -141,10 +141,10 @@
     },
     {
       "index":5,
-      "name":"Fire",
+      "name":"Fire Fighter",
       "brand":"Uday K",
       "url":"tel:101", 
-      "image":"https://editorial01.shutterstock.com/wm-preview-1500/1167013e/b5631d8d/mumbais-raj-era-fire-brigade-gets-a-modern-update-byculla-firestation-mumbai-india-shutterstock-editorial-1167013e.jpg"
+      "image":"https://image.shutterstock.com/image-vector/firefighter-fireman-suit-full-equipment-260nw-2269925297.jpg"
     },
 
    {
@@ -152,21 +152,21 @@
       "name":"WHN",
       "brand":"R Shreelekha",
       "url":"tel:1090", 
-      "image":"https://uppolice.gov.in/site/writereaddata/siteContent/wpl/2018092615403885312.jpg"
+      "image":"https://d3lzcn6mbbadaf.cloudfront.net/media/details/dhedsjhwdefedf.jpg"
     },
      {
       "index":5,
       "name":"Papa",
       "brand":"",
       "url":"tel:919818573493", 
-      "image":"https://img.favpng.com/10/9/11/drawing-father-son-child-png-favpng-z2pyh2ezHp9KN2s0heQ02hz7Y.jpg"
+      "image":"https://cdn4.vectorstock.com/i/1000x1000/43/13/father-daughter-vector-31754313.jpg"
     },
     {
       "index":5,
-      "name":"Ambulence",
+      "name":"Ambulance",
       "brand":"Pankaj Rahi",
       "url":"tel:102", 
-      "image":"https://www.zhl.org.in/blog/wp-content/uploads/2019/09/What-Is-The-Emergency-Number-Of-Ambulance.jpg"
+      "image":"https://static.vecteezy.com/system/resources/previews/001/818/427/non_2x/ambulance-paramedic-car-side-view-design-free-vector.jpg"
     },
     {
       "index":6,
@@ -184,17 +184,17 @@
     },
      {
       "index":6,
-      "name":"Whatspp",
+      "name":"WhatsApp",
       "brand":"Brian Acton 2009",
       "url":"https://web.whatsapp.com/", 
-      "image":"https://e7.pngegg.com/pngimages/1006/83/png-clipart-whatsapp-computer-icons-android-whatsapp-cdr-logo.png"
+      "image":"https://pbs.twimg.com/profile_images/1318652224638124032/wrpp2Nl4_400x400.png"
     },
     {
       "index":6,
       "name":"ORIGINAL",
       "brand":"Chat and video calling",
       "url":"https://www.snapchat.com/", 
-      "image":"https://i.pinimg.com/originals/d9/cc/e8/d9cce8e37b70ff92d212a1bc7a9137d5.png"
+      "image":"https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg"
     },
    {
       "index":7,
@@ -205,24 +205,24 @@
     },
    {
       "index":7,
-      "name":"Linkedin",
+      "name":"LinkedIn",
       "brand":"Reid Hoffman 2002",
       "url":"https://www.linkedin.com/feed/", 
-      "image":"https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-transparent-PNG.png"
+      "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
     },
      {
       "index":7,
       "name":"CodeChef",
       "brand":"Bhavin Turakhia 2009",
       "url":"https://www.codechef.com/", 
-      "image":"https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
+      "image":"https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Codechef%28new%29_logo.svg/1200px-Codechef%28new%29_logo.svg.png"
     },
     {
       "index":7,
       "name":"GFG",
       "brand":"Sandeep Jain",
       "url":"https://practice.geeksforgeeks.org/", 
-      "image":"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200617163105/gfg-logo.png"
+      "image":"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
     },    {
       "index":7,
       "name":"Leetcode",
@@ -235,27 +235,27 @@
       "name":"MotiLal Oswal",
       "brand":"Motilal Oswal 1987",
       "url":"https://www.motilaloswal.com/open-demat-account/?SRC=Website&pd=Header_OAO_Button",
-      "image":"https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397178517/4b658045e5aebfa858d3ad272ca46e8d.jpg"
+      "image":"https://static.startuptalky.com/2021/06/motilal-oswal-logo-startuptalky-1.jpg"
     },
    {
       "index":8,
-      "name":"Upstocks",
+      "name":"UpStocks",
       "brand":"Ravi Kumar 2009",
       "url":"https://upstox.com/open-demat-account/", 
-      "image":"https://upstox.com/favicon/mstile-310x310.png"
+      "image":"https://upstox.com/app/uploads/2021/09/featured-img-copy2.gif"
     },
      {
       "index":8,
       "name":"Groww",
       "brand":"Lalit Keshre 2016",
       "url":"https://www.groww.net/login", 
-      "image":"https://groww.in/logo-groww270.png"
+      "image":"https://cdn-1.webcatalog.io/catalog/groww/groww-icon-filled-256.png"
     },
     {
       "index":8,
       "name":"Zerodha",
       "brand":"Nitin kamanth 2010",
       "url":"https://signup.zerodha.com/", 
-      "image":"https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1483514228/j6kp5kzapwqvn4ekffy3.jpg"
+      "image":"https://images.livemint.com/img/2022/11/22/1600x900/zerodha_1642783956834_1669092471798_1669092471798.png"
     }
   ]

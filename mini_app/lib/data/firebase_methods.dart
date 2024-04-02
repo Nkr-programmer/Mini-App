@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:mini_app/Models/recentlink.dart';
-import 'package:mini_app/Models/user.dart';
+import 'package:mini_app/Models/user.dart' as Users;
 import 'package:mini_app/Utils/utilities.dart';
 import 'package:mini_app/classification/Subconstants.dart';
 
@@ -11,28 +11,27 @@ class FirebaseMethods
 {
   final FirebaseAuth _auth= FirebaseAuth.instance;
   GoogleSignIn _googleSignIn=GoogleSignIn();
-  static final Firestore firestore = Firestore.instance;
+  static final FirebaseFirestore firestore = FirebaseFirestore.instance;
   //1
-Future<FirebaseUser> getCurrentUser() async {
-    FirebaseUser currentUser;
-    currentUser = await _auth.currentUser();
+Future<User?> getCurrentUser() async {
+    User? currentUser;
+    currentUser = await _auth.currentUser;
     
     //it just gives us the idea some one is logedin(if yes who) or not
     return currentUser;
   }
 
   //2
- Future<FirebaseUser> signIn() async{
-GoogleSignInAccount _signinAccount =await _googleSignIn.signIn();
-GoogleSignInAuthentication _signinAuthentication 
-=await _signinAccount.authentication;
+ Future<User?> signIn() async{
+GoogleSignInAccount? _signinAccount =await _googleSignIn.signIn();
+GoogleSignInAuthentication _signinAuthentication =await _signinAccount!.authentication;
 
 final AuthCredential credential 
-=GoogleAuthProvider.getCredential(accessToken: 
+=GoogleAuthProvider.credential(accessToken: 
 _signinAuthentication.accessToken, idToken:_signinAuthentication.idToken );
 
-AuthResult result = await _auth.signInWithCredential(credential);
-FirebaseUser user =result.user;
+UserCredential result = await _auth.signInWithCredential(credential);
+User? user =result.user;
 return user;
 //FIRST _SIGNINACCOUNT TAKE THE DETAILS WHEN WE CLICK ON EMAILID
 //THEN _SIGNINAUTHENTICATION TAKE THE AUTHENTICATION
@@ -42,30 +41,31 @@ return user;
 
 
 //3
-  Future<bool> authenticateUser(FirebaseUser user) async {
+  Future<bool> authenticateUser(User? user) async {
     QuerySnapshot result = await firestore
         .collection("users")
-        .where("email", isEqualTo: user.email)
-        .getDocuments();
+        .where("email", isEqualTo: user?.email)
+        .get();
 //** query from authentication which take is it already registered or not
 // because if there is registered then dont need to pass the data again 
 //else upload the data in database  AUTHENTICATION AND DATABASE 
 //ARE DIFFERENT IN THIS AUTHENTICATION IS USED
-    final List<DocumentSnapshot> docs = result.documents;
+    final List<DocumentSnapshot> docs = result.docs;
 
     //if user is registered then length of list > 0 or else less than 0
     return docs.length == 0 ? true : false;
   }
 
 //4
-  Future<void> addDataToDb(FirebaseUser currentUser) async {
-    String username = Utilities.getUsername(currentUser.email);
+  Future<void> addDataToDb(User? currentUser) async {
+    String? email = currentUser!.email;
+    String username = Utilities.getUsername(email ?? "default");
 
-    User user = User(
+    Users.User? user = Users.User(
         uid: currentUser.uid,
-        email: currentUser.email,
-        name: currentUser.displayName,
-        profilePhoto: currentUser.photoUrl,
+        email: currentUser.email ?? "default",
+        name: currentUser.displayName ?? "default",
+        profilePhoto: currentUser.photoURL ?? "default",
         username: username, 
         state: 5, status: "online",
         
@@ -73,7 +73,7 @@ return user;
 //this is to store currently loggedin user details to class user
 var sap=user.toMap(user) as Map<String,dynamic>;
     firestore
-        .collection("users").document(currentUser.uid).setData(sap);
+        .collection("users").doc(currentUser.uid).set(sap);
 //to send the all the login releated data to data base 
 
   }
@@ -83,19 +83,20 @@ var sap=user.toMap(user) as Map<String,dynamic>;
   final CollectionReference _linksCollection= firestore.collection("link");
  Future<void> addLinkToDb(RecentMessage recentMessage) async {
     var map = recentMessage.toMap();
-  FirebaseUser user;
-  user =await _auth.currentUser();
-  await     _linksCollection.document(user.uid).collection("nope").add(map);
+  User? user;
+  user =await _auth.currentUser;
+  await     _linksCollection.doc(user?.uid).collection("nope").add(map);
 
 //addToContacts(senderId:message.senderId,receiverId:message.receiverId)
   }
   Future<List<RecentMessage>> fetchAllLinks() async {
     List<RecentMessage> linksSets = new List<RecentMessage>.empty(growable:true);
-  FirebaseUser user;
-  user =await _auth.currentUser();
-  QuerySnapshot querySnapshot = await _linksCollection.document(user.uid).collection("nope").getDocuments();
-    for (var i = 0; i < querySnapshot.documents.length; i++) 
-    {    linksSets.add(RecentMessage.fromMap(querySnapshot.documents[i].data));}
+  User? user;
+  user =await _auth.currentUser;
+  QuerySnapshot querySnapshot = await _linksCollection.doc(user?.uid).collection("nope").get();
+    for (var i = 0; i < querySnapshot.docs.length; i++) 
+    { 
+      linksSets.add(RecentMessage.fromMap(querySnapshot.docs[i].data() as Map<String,dynamic>));}
     linksSets.sort((a,b)=>a.addedOn.compareTo(b.addedOn));
      return linksSets;
   }
@@ -104,13 +105,13 @@ List<RecentMessage> linksSets= await  fetchAllLinks();
 bool got=linksSets.any((element) => element.name==currentlink.name);
 if(!got){return false;}
 else{    
-  FirebaseUser user;
-  user =await _auth.currentUser();
-  QuerySnapshot querySnapshot = await _linksCollection.document(user.uid).collection("nope")
+  User? user;
+  user =await _auth.currentUser;
+  QuerySnapshot querySnapshot = await _linksCollection.doc(user?.uid).collection("nope")
         .where("link_name", isEqualTo: currentlink.name)
-        .getDocuments();
+        .get();
 int numb=linksSets.where((element) => element.name==currentlink.name).elementAt(0).number;
-        querySnapshot.documents[0].reference.updateData({
+        querySnapshot.docs[0].reference.update({
            "link_index": currentlink.index,
           "link_name":  currentlink.name,
           "link_brand": currentlink.brand,
@@ -137,12 +138,12 @@ int numb=linksSets.where((element) => element.name==currentlink.name).elementAt(
 
 Future<void> deleteLinkToDb(RecentMessage currentlink) async{
 
-  FirebaseUser user;
-  user =await _auth.currentUser();
-  QuerySnapshot querySnapshot = await _linksCollection.document(user.uid).collection("nope")
+  User? user;
+  user =await _auth.currentUser;
+  QuerySnapshot querySnapshot = await _linksCollection.doc(user?.uid).collection("nope")
         .where("link_name", isEqualTo: currentlink.name)
-        .getDocuments();
-        querySnapshot.documents[0].reference.delete();
+        .get();
+        querySnapshot.docs[0].reference.delete();
 }
 //     LIBRARY STUFF
 

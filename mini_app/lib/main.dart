@@ -3,11 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:mini_app/classification/Home_screen.dart';
 import 'package:mini_app/data/firebase_repository.dart';
 import 'package:mini_app/login_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
-  runApp(MyHomePage());
+  void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp( MyHomePage());
 }
-  
 
 //keytool -list -v -keystore C:\Users\nikhil\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
 class MyHomePage extends StatefulWidget {
@@ -27,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
      
 theme: ThemeData(brightness: Brightness.dark),
         home: FutureBuilder(future:  _repository.getCurrentUser(), 
-        builder:(context, AsyncSnapshot<FirebaseUser> snapshot) {  
+        builder:(context, AsyncSnapshot<User?> snapshot) {  
           if(snapshot.hasData)
           {return HomeScreen();}
           else

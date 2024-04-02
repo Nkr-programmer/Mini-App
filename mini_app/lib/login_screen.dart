@@ -16,7 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black26,
+      backgroundColor:Colors.black,
       body:Stack(children:[ Center(child: loginButton()
       ),
       isLoginPressed?Center(child: CircularProgressIndicator(),):Container()
@@ -27,13 +27,19 @@ class _LoginScreenState extends State<LoginScreen> {
     return Shimmer.fromColors(
       baseColor: Colors.white,
       highlightColor: Colors.grey,
-          child: FlatButton(
-        padding: EdgeInsets.all(35),
-        child: Text("Login",
-        style: TextStyle(fontSize: 35,fontWeight: FontWeight.w700,letterSpacing: 1.2),),
-        onPressed: () => performLogin(),
-            shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(10))
-            ),
+          child: Padding(
+            padding: EdgeInsets.all(35.0),
+            child: TextButton(
+                    child: Text("Login",
+                    style: TextStyle(fontSize: 35,fontWeight: FontWeight.w700,letterSpacing: 1.2),),
+                    onPressed: () => performLogin(),
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(borderRadius:BorderRadius.circular(10))
+                        ),
+                    ),
+              ),
+          ),
     );
         }   
  void    performLogin() {
@@ -43,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
    isLoginPressed=true;
  });
 
-   _repository.signIn().then((FirebaseUser user) {
+   _repository.signIn().then((User? user) {
 if(user != null){
   authenticateUser(user);
 }else{
@@ -53,9 +59,9 @@ if(user != null){
 // from clicked email id ans=dd user hve all that details
    });
  }
- void authenticateUser(FirebaseUser user)
+ void authenticateUser(User? user)
 {
-_repository.authenticateUser(user).then((isNewUser) {
+_repository.authenticateUser(user!).then((isNewUser) {
   setState(() {
     isLoginPressed=false;
   });
