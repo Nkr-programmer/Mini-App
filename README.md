@@ -92,4 +92,6 @@ Or We can Archive the apps. Difference in both is Delete remove the complete usa
 
 By clicking on Sign Out it will go to login page again.
 
-Thank you
+So Thats All
+
+Thank you!!
